@@ -23,13 +23,18 @@
     align-content: center;
     justify-content: center;
     box-shadow: 0px 1px 3px 0px black;
-    animation: fade-out 500ms ease-in 1000ms 1 forwards;
+    -webkit-animation: fade-out 500ms ease-in 1000ms 1 forwards;
+            animation: fade-out 500ms ease-in 1000ms 1 forwards;
 
 }
 .alert-success{
     font-weight: bold;
     background-color: rgb(27, 255, 194);
 }
+@-webkit-keyframes fade-out{ 
+    0%   { opacity:1; }
+    100% { opacity:0; }
+  }
 @keyframes fade-out{ 
     0%   { opacity:1; }
     100% { opacity:0; }
